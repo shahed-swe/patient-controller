@@ -41,13 +41,13 @@ $(document).ready(function() {
         var input2 = $("#password").val();
         if (input1 && input2) {
             if (input1 == "Shahed" && input2 == "32100505") {
-                alert("Welcome To the New World Of Hacking");
+                alert("Welcome To New Zen Tech");
                 $("#validform").attr("action", "home.html");
             } else {
                 alert("Wrong user name or password");
             }
         } else {
-            alert("Good bye");
+            alert("Please Try Again!");
         }
     });
 

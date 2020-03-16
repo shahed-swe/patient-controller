@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2:400,500,600,700,800&display=swap&subset=latin-ext,tamil,vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Document</title>
+    <style>
+        .form-section {
+            margin-top: 50px;
+        }
+        
+        .form-sec {
+            margin: 20px 20px 20px 20px;
+        }
+        
+        .card-img-top {
+            height: 320px;
+            width: 340px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .second-text {
+            margin-left: 9px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar section -->
+    <section class="nav-section">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="home.html"><span class="text-success">IoT</span> Expert</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <div class="nav-item">
+                        <div class="nav-link">About</div>
+                    </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Patient
+        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="add_patient.html">Add New Patient</a>
+                            <a class="dropdown-item" href="check_patient.html">Check Patient</a>
+                            <a class="dropdown-item" href="add_medicine.html">Add Medicine</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!-- patient adding section -->
+    <section class="form-section">
+        <div class="col-12 col-lg-12 m-auto">
+            <div class="card">
+                <img class="card-img-top" src="img/doctor.png" alt="">
+                <form class="form-sec" action="">
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Enter patients Id">
+                        </div>
+                        <div class="form-group col-6">
+                            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Enter patients Name">
+                        </div>
+                        <div class="form-group col-12">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter patients Email Address">
+                            </div>
+                        </div>
+                        <div class="form-group col-6">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    +880
+                                </div>
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone Number">
+                            </div>
+                        </div>
+                        <div class="form-group col-6">
+                            <input type="text" class="form-control" id="bed_no" name="bed_no" placeholder="Enter Bed Number">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control first_text" name="pr_address" id="pr_address" cols="126" rows="3" placeholder="Enter Patients Present Address"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control second-text" name="pe_address" id="pe_address" cols="124" rows="3" placeholder="Enter Patients Permanent Address"></textarea>
+                        </div>
+                        <button class="btn btn-outline-info shadow-none btn-block">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- script -->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
