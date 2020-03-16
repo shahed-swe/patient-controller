@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/login.css">
     <title>Document</title>
     <style>
+        body {
+            background-image: linear-gradient(45deg, #62f862, #2089b3);
+        }
+        
         .form-section {
             margin-top: 50px;
         }
@@ -27,6 +31,10 @@
         
         .second-text {
             margin-left: 9px;
+        }
+        
+        .card {
+            box-shadow: 10px 10px 5px rgb(29, 129, 196);
         }
     </style>
 </head>
@@ -95,11 +103,11 @@
                         <div class="form-group col-6">
                             <input type="text" class="form-control" id="bed_no" name="bed_no" placeholder="Enter Bed Number">
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control first_text" name="pr_address" id="pr_address" cols="126" rows="3" placeholder="Enter Patients Present Address"></textarea>
+                        <div class="form-group col-6">
+                            <input type="text" class="form-control" id="pr_address" name="pr_address" placeholder="Enter Present Address">
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control second-text" name="pe_address" id="pe_address" cols="124" rows="3" placeholder="Enter Patients Permanent Address"></textarea>
+                        <div class="form-group col-6">
+                            <input type="text" class="form-control" id="pe_address" name="pe_address" placeholder="Enter Permanent Address">
                         </div>
                         <button class="btn btn-outline-info shadow-none btn-block">Submit</button>
                     </div>
