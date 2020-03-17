@@ -43,6 +43,16 @@
             padding-left: 22px;
             padding-right: 22px;
         }
+        
+        .form-control {
+            border: none;
+            border-bottom: 1px solid #15a1d8;
+        }
+        
+        .form-control:disabled {
+            background: white;
+            border-bottom: 1px solid #095370;
+        }
     </style>
 </head>
 
@@ -116,6 +126,16 @@
                         <div class="form-group col-6">
                             <input type="text" class="form-control" id="pe_address" name="pe_address" placeholder="Enter Permanent Address">
                         </div>
+                        <div class="form-group col-6">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">Upload</div>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="user_image" name="user_image">
+                                    <label class="custom-file-label" for="">Choose File</label>
+                                </div>
+                            </div>
+
+                        </div>
                         <button class="btn btn-outline-info shadow-none btn-block" name="submit" id="submit">Submit</button>
                     </div>
                 </form>
@@ -131,6 +151,7 @@
             $("#bed_no").attr("disabled", true);
             $("#pr_address").attr("disabled", true);
             $("#pe_address").attr("disabled", true);
+            $("#user_image").attr("disabled", true);
 
 
             $("#patient_id").on('input', function() {
@@ -145,6 +166,7 @@
                     $("#bed_no").attr("disabled", true);
                     $("#pr_address").attr("disabled", true);
                     $("#pe_address").attr("disabled", true);
+                    $("#user_image").attr("disabled", true);
                 }
             });
 
@@ -159,6 +181,7 @@
                     $("#pr_address").attr("disabled", true);
                     $("#pe_address").attr("disabled", true);
                     $("#submit").attr("disabled", true);
+                    $("#user_image").attr("disabled", true);
                 }
             });
             $("#email").on('input', function() {
@@ -171,6 +194,7 @@
                     $("#pr_address").attr("disabled", true);
                     $("#pe_address").attr("disabled", true);
                     $("#submit").attr("disabled", true);
+                    $("#user_image").attr("disabled", true);
                 }
             });
             $("#phone").on('input', function() {
@@ -182,6 +206,7 @@
                     $("#pr_address").attr("disabled", true);
                     $("#pe_address").attr("disabled", true);
                     $("#submit").attr("disabled", true);
+                    $("#user_image").attr("disabled", true);
                 }
             });
             $("#bed_no").on('input', function() {
@@ -192,6 +217,7 @@
                     $("#pr_address").attr("disabled", true);
                     $("#pe_address").attr("disabled", true);
                     $("#submit").attr("disabled", true);
+                    $("#user_image").attr("disabled", true);
                 }
             });
             $("#pr_address").on('input', function() {
@@ -201,19 +227,33 @@
                 } else {
                     $("#pe_address").attr("disabled", true);
                     $("#submit").attr("disabled", true);
+                    $("#user_image").attr("disabled", true);
                 }
             });
             $("#pe_address").on('input', function() {
                 var input = $("#pe_address").val();
                 if (input) {
+                    $("#user_image").attr("disabled", false);
+                } else {
+                    $("#user_image").attr("disabled", true);
+                    $("#submit").attr("disabled", true);
+                }
+            });
+            $("#user_image").on('input', function() {
+                var input = $("#user_image").val();
+                if (input) {
                     $("#submit").attr("disabled", false);
                 } else {
+
                     $("#submit").attr("disabled", true);
                 }
             });
 
         })
     </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
