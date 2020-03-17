@@ -64,3 +64,21 @@
 .display-2 {
     text-shadow: 10px 10px 5px gray;
 }
+
+@media only screen and (max-width: 1366px) {
+    .login-section {
+        margin-top: 210px;
+    }
+    .take {
+        margin-left: 40%
+    }
+    .carousel-caption {
+        position: absolute;
+        top: 25%;
+        transform: translate(-5%);
+    }
+    .section-two img {
+        height: 635px;
+        width: 1366px;
+    }
+}
