@@ -79,4 +79,23 @@ $(function() {
             $("#submit").css("display", "none");
         }
     });
+
+    $("#submit").click(function() {
+        event.preventDefault();
+        var data = {
+            input1: $("#first_medicine_name").val(),
+            input2: $("#first_medicine_time").val(),
+            input3: $("#second_medicine_name").val(),
+            input4: $("#second_medicine_time").val(),
+            input5: $("#third_medicine_name").val(),
+            input6: $("#third_medicine_time").val(),
+        }
+
+        if (data) {
+            console.log(data);
+        } else {
+            console.log("Nothing to be prevent here!!!");
+        }
+    })
+
 });
