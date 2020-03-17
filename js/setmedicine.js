@@ -96,6 +96,5 @@ $(function() {
         } else {
             console.log("Nothing to be prevent here!!!");
         }
-    })
-
+    });
 });
