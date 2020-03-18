@@ -14,8 +14,20 @@
             background-image: linear-gradient(45deg, #62f862, #2089b3);
         }
         
+        @keyframes movingTopToBottom {
+            0% {
+                top: -650px;
+            }
+            100% {
+                top: 0px;
+            }
+        }
+        
         .form-section {
             margin-top: 50px;
+            animation: movingTopToBottom 3s;
+            -webkit-animation: movingTopToBottom 3s;
+            position: relative;
         }
         
         .form-sec {
@@ -51,6 +63,10 @@
         .form-control:disabled {
             background: white;
             border-bottom: 1px solid #095370;
+        }
+        
+        .dropdown-item:hover {
+            background-color: azure;
         }
     </style>
 </head>

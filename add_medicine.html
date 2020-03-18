@@ -16,8 +16,20 @@
             background-image: linear-gradient(45deg, #62f862, #2089b3);
         }
         
+        @keyframes movingTopToBottom {
+            0% {
+                top: -650px;
+            }
+            100% {
+                top: 0px;
+            }
+        }
+        
         .form-section {
             margin-top: 50px;
+            animation: movingTopToBottom 3s;
+            -webkit-animation: movingTopToBottom 3s;
+            position: relative;
         }
         
         .form-sec {
@@ -55,6 +67,10 @@
             background: white;
             border-bottom: 1px solid #0e6588;
             border-right: 1px solid #033e55;
+        }
+        
+        .dropdown-item:hover {
+            background-color: azure;
         }
     </style>
 </head>
@@ -95,11 +111,11 @@
         </nav>
     </section>
     <!-- patient adding section -->
-    <section class="form-section">
+    <section class="form-section" id="form-section">
         <div class="col-12 col-lg-12 m-auto">
             <div class="card">
                 <img class="card-img-top" src="img/doctor.png" alt="">
-                <form class="form-sec" id="validateForm" action="" method="POST">
+                <form class="form-sec" id="validateForm" action="add_medicine.html" method="POST">
                     <div class="form-row">
                         <div class="form-group col-12">
                             <input type="text" class="form-control" id="patient_id" name="patient_id" placeholder="Enter patients Id">
