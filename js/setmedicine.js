@@ -93,6 +93,7 @@ $(function() {
 
         if (data) {
             console.log(data);
+            localStorage.setItem('getvalue', data);
         } else {
             console.log("Nothing to be prevent here!!!");
         }
