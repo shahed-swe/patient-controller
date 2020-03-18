@@ -9,6 +9,27 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/profile.js"></script>
     <title>Document</title>
+    <style>
+        .dropdown-item:hover {
+            background-color: azure;
+        }
+        
+        @keyframes movingTopToBottom {
+            0% {
+                top: -650px;
+            }
+            100% {
+                top: 0px;
+            }
+        }
+        
+        .container {
+            margin-top: 50px;
+            animation: movingTopToBottom 3s;
+            -webkit-animation: movingTopToBottom 3s;
+            position: relative;
+        }
+    </style>
 </head>
 
 <body>
